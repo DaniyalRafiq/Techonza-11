@@ -1781,6 +1781,54 @@ button#backToTopBtn {
     color: var(--secondary-400);
 }
 
+.next_prev_post {
+    flex: 1;
+}
+
+.next_prev_post_main {
+    display: flex;
+    gap: 30px;
+}
+
+.next_prev_post {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    max-width: 458px;
+}
+
+.next_prev_post figure {
+    height: 100%;
+    width: 100%;
+}
+
+.next_prev_post_content {
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    padding: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.next_prev_post_content .lates_tags_content h6 {
+    font-size: 15px;
+    color: white;
+}
+
+.next_prev_post_content h4 {
+    font-size: 23px;
+    color: var(--white);
+}
+
+.next_prev_post_content.next_post__content {
+    align-items: flex-end;
+}
+
 /*==========single_blog_end==========*/
 
 
@@ -2628,6 +2676,69 @@ button#backToTopBtn {
 }
 
 /*==========single_Store_end==========*/
+
+
+
+/*==========single_Category_start==========*/
+.single_cate_main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+    gap: 20px;
+}
+
+.single_cate_main .latest_main_card .latest_main_card_img>figure {
+    height: 200px;
+}
+
+.single_cate_main .latest_main_card {
+    box-shadow: 0 0 15px #0001;
+    border-bottom: 5px solid var(--primary-100);
+}
+
+.single_cate_main .latest_main_card .latest_main_card_content h4 {
+    font-size: 21px;
+}
+
+.single_cate_main .latest_main_card:hover {
+    transform: translateY(-3px);
+}
+
+.next_prev_alert {
+    position: absolute;
+    top: -0;
+    right: -10px;
+    font-size: clamp(30px,4vw,40px);
+    font-weight: 700;
+    color: var(--white);
+    opacity: 0;
+    transition: .3s;
+    background: linear-gradient(90deg, transparent 20%, #fff4 90%);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 0.4px var(--white);
+    text-stroke: 0.4px var(--white);
+    z-index: 2  ;
+}
+.next_prev_alert.prev_alert {
+    left: 0;
+}
+
+.next_prev_post:hover .next_prev_alert.next_alert {
+    opacity: 1;
+    right: 20px;
+}
+.next_prev_post:hover .next_prev_alert.prev_alert {
+    opacity: 1;
+    left: 20px;
+}
+.next_prev_post.next_post {
+    margin-left: auto;
+}
+
+.next_prev_post.prev_post {
+    margin-right: auto;
+}
+/*==========single_Category_end==========*/
 
 
 
