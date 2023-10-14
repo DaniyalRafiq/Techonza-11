@@ -71,7 +71,7 @@ $(document).ready(function () {
     const mainAlpha = $(".alphabet");
     for (let index = 0; index < alphabet.length; index++) {
       $(mainAlpha).append(
-        `<a href="" class="alphabet-item">${alphabet[index]}</a>`
+        `<a href="#" class="alphabet-item">${alphabet[index]}</a>`
       );
     }
     $(".alphabet-item").first().addClass("active");
@@ -83,6 +83,11 @@ $(document).ready(function () {
 
 
     $(".sidebar_main_topics ul li").click(function () {
+      $(this).addClass("active");
+      $(this).siblings().removeClass("active");
+    });
+
+    $(".filter_btn").click(function () {
       $(this).addClass("active");
       $(this).siblings().removeClass("active");
     });
@@ -127,4 +132,8 @@ var swiper2 = new Swiper(".hero_swiper_main", {
   },
   speed: 800,
 });
+
+
+
+
 });
