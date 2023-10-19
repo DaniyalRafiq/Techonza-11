@@ -1,3 +1,14 @@
+$(window).on('load' , function(){
+  var swiper = new Swiper(".featur_slider_main", {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    speed: 800,
+  });
+});
+
 $(document).ready(function () {
 
     var $backToTopBtn = $("#backToTopBtn");
@@ -132,8 +143,5 @@ var swiper2 = new Swiper(".hero_swiper_main", {
   },
   speed: 800,
 });
-
-
-
 
 });

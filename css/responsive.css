@@ -2,6 +2,10 @@
    .footer_logo {
       background: transparent;
    }
+
+   .disclimer_wrapper figure {
+      display: none;
+   }
 }
 
 @media (max-width: 1237px) {}
@@ -95,6 +99,17 @@
    }
 }
 
+@media (max-width: px) {}
+@media (max-width: 753px) {
+   .featur_slider_main {
+      width: 100%;
+      max-width: 100%;
+   }
+   
+
+   
+}
+
 @media (max-width: 640px) {
    .header_navbar ul {
       gap: 16px;
@@ -124,23 +139,26 @@
    .single_store_content p {
       -webkit-line-clamp: 2;
       text-align: center;
-   }.single_store_upper_card {
+   }
+
+   .single_store_upper_card {
       flex-direction: column;
       box-shadow: 0 0 15px #0001;
-  }
-  
-  .single_store_upper_content {
+   }
+
+   .single_store_upper_content {
       align-items: center;
-  }
-  
-  .single_store_upper_content h4 ,  .single_store_upper_content p {
+   }
+
+   .single_store_upper_content h4,
+   .single_store_upper_content p {
       text-align: center;
-  }
-  
-  .rating_star_main {
+   }
+
+   .rating_star_main {
       flex-direction: column;
       gap: 6px;
-  }
+   }
 }
 
 @media (max-width: 535px) {
@@ -165,7 +183,7 @@
 
    .subs_btn {
       flex: 0 0 125px;
-      font-size: 15px;
+      font-size: clamp(13px, 2.5vw, 15px);
    }
 
    .latest_btn_main {
@@ -208,17 +226,30 @@
       flex-direction: column;
       gap: 12px;
    }
+
    .click_code_main {
       flex-direction: column;
       gap: 10px;
-  }
-  
-  .copy_code_btn.visit_store {
+   }
+
+   .copy_code_btn.visit_store {
       display: none;
-  }.modal_close_btn {
-   height: 30px;
-   width: 30px;
-   top: -16px;
-   right: -13px;
-}
+   }
+
+   .modal_close_btn {
+      height: 30px;
+      width: 30px;
+      top: -16px;
+      right: -13px;
+
+   }
+
+   .latest_mini_cards_main {
+      flex-direction: column;
+
+   }
+
+   .latest_mini_cards_main a {
+      flex: 0 0 120px;
+   }
 }
