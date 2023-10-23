@@ -159,10 +159,17 @@
       flex-direction: column;
       gap: 6px;
    }
+   .next_prev_post_main{
+      flex-direction: column;
+      gap: 10px;
+   }.next_prev_post {
+      flex: 0 0 auto;
+      height: 140px;
+  }
 }
 
 @media (max-width: 535px) {
-   .footer_logo {}
+
 
    .footer_logo p {
       text-align: center;

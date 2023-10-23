@@ -1667,7 +1667,9 @@ button#backToTopBtn {
 .next_prev_post {
     flex: 1;
 }
-
+.next_prev_post_content.next_post__content h4 {
+    text-align: right;
+}
 .next_prev_post_main {
     display: flex;
     gap: 30px;
@@ -1678,7 +1680,8 @@ button#backToTopBtn {
     overflow: hidden;
     border-radius: 20px;
     position: relative;
-    max-width: 458px;
+    max-width: 418px;
+    width: 100%;
 }
 
 .next_prev_post figure {
@@ -3012,7 +3015,7 @@ button#backToTopBtn {
     background: var(--primary-50);
     color: var(--primary-800);
     transition: .3s;
-    font-size: clamp(13px, 2.5vw, 14x);
+    font-size: clamp(13px, 2.5vw, 14px);
 }
 
 .feature_slide_card:hover .feature_tags_main .tag span {
@@ -3122,13 +3125,15 @@ button#backToTopBtn {
 /*==========Home_cate_Start==========*/
 .cate_home_wrapper {
 
-    display: flex;
+display: flex;
 
-    gap: 20px;
+gap: 20px;
 
-    padding: 20px;
+padding: 20px;
 
-    background: white;
+background: white;
+
+border-radius: 5px;
 }
 
 
@@ -3297,11 +3302,9 @@ button#backToTopBtn {
     transition: .3s;
     font-weight: 700;
 }
-
 .cate_card:hover h4 {
     bottom: 12px;
 }
-
 /*==========Home_cate_end==========*/
 
 
